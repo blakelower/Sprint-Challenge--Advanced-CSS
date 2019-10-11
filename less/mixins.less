@@ -1,16 +1,36 @@
 // Mixins Here
-.buttonLayout{
-    font-size: 1.5rem;
-      border-radius: 4px;
-      background-color: black;
-      color: white;
-      padding: 5px;
-      width: 25%;
-      text-align: center;
+.buttonLayout( @btnFont, @btnRadius){
+  font-size: 1.5rem;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+
+.styleAnchor{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 2em;
+}
+
+  .navStyle{
+      display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
   }
-.NavAnchor{
-    text-decoration: none;
+  .button-style(){
     font-size: 1.5rem;
-    color: black;
-    padding: 2em;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 25%;
+
+    &:hover {
+        color: black;
+        background-color: white;
+      }
 }
